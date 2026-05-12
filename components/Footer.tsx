@@ -11,7 +11,7 @@ const libre = Libre_Caslon_Text({
 
 function Footer() {
     return (
-        <footer className="w-full theme-footer bg-background absolute bottom-0 left-0 flex z-1">
+        <footer className="w-full theme-footer bg-background mt-auto">
             <div className="max-w-5xl h-full flex flex-col justify-between mx-auto pt-3 pb-3">
                 <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-3 pt-10 lg:pt-20 pb-20 pl-5 pr-5">
                     <div className="flex flex-col">

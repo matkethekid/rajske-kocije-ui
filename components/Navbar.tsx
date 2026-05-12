@@ -26,7 +26,7 @@ const links: Links[] = [
 function Navbar() {
     const [activeSidebar, setActiveSidebar] = useState<boolean>(false);
     return (
-        <nav className="w-full h-20 sticky top-0 z-100">
+        <nav className="w-full h-20 sticky top-0 z-100 bg-white">
             <div className="flex flex-row justify-between items-center lg:max-w-5xl h-full mx-auto w-full p-5 lg:p-0">
                 <p className={`${libre.className} text-lg w-50 flex z-100`}>Rajske Kočije</p>
                 <ul className="hidden lg:flex flex-row gap-10 w-full items-center justify-center">
