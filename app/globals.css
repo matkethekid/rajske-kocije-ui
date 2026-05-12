@@ -128,3 +128,9 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .theme-footer {
+    --background: #E5E2DA;
+  }
+}

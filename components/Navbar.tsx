@@ -26,9 +26,9 @@ const links: Links[] = [
 function Navbar() {
     const [activeSidebar, setActiveSidebar] = useState<boolean>(false);
     return (
-        <nav className="w-full h-20 fixed t-0">
+        <nav className="w-full h-20 sticky top-0 z-100">
             <div className="flex flex-row justify-between items-center lg:max-w-5xl h-full mx-auto w-full p-5 lg:p-0">
-                <p className={`${libre.className} text-lg w-50 flex z-11`}>Rajske Kočije</p>
+                <p className={`${libre.className} text-lg w-50 flex z-100`}>Rajske Kočije</p>
                 <ul className="hidden lg:flex flex-row gap-10 w-full items-center justify-center">
                     {links.map((link: Links, index: number) => (
                         <Link key={index} href={link.href} className="text-black uppercase hover:underline underline-offset-4">{link.name}</Link>
@@ -41,8 +41,8 @@ function Navbar() {
                     }
                 </button>
             </div>
-            <div className={`w-full min-h-screen bg-white z-10 flex flex-col transition-all duration-300 ${activeSidebar ? "translate-x-0" : "translate-x-full"}`}>
-                <ul className="w-full h-[50vh] flex flex-col gap-5 justify-center items-center">
+            <div className={`w-full min-h-screen fixed bg-white z-99 flex flex-col transition-all duration-300 ${activeSidebar ? "translate-x-0" : "translate-x-full"}`}>
+                <ul className="w-full h-[60vh] flex flex-col gap-5 justify-center items-center">
                     {links.map((link: Links, index: number) => (
                         <li key={index} className="text-black underline underline-offset-4 uppercase">{link.name}</li>
                     ))}
