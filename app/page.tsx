@@ -26,9 +26,9 @@ export default function Home() {
         <Link href="/kontakt" className="bg-black text-white px-12 py-4 text-sm rounded-full">
           POZOVITE NAS
         </Link>
-        <button className="w-12.5 h-12.5 rounded-full bg-black text-white flex items-center justify-center">
+        <div className="w-12.5 h-12.5 rounded-full bg-black text-white flex items-center justify-center">
           <Phone width={20} height={20} />
-        </button>
+        </div>
       </div>
     <section className="hidden mt-20 lg:flex items-start justify-center gap-4 px-4 max-w-5xl mx-auto">
       <div className="w-32 md:w-40 mt-16">
