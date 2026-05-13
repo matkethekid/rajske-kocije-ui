@@ -125,7 +125,7 @@ export default function Home() {
                   <h3 className="text-2xl font-serif text-[#2a2a2a] mb-4">Pogrebne Usluge</h3>
                   <p className="text-gray-500 text-[13px] leading-relaxed mb-8 opacity-80">
                     Sveobuhvatna organizacija koja uključuje tradicionalna izlaganja, verske obrede i savremene ceremonije života u kapeli.</p>
-                  <button className="flex items-center text-[10px] font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">
+                  <button className="flex items-center font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">
                     PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" /></button>
                 </div>
               </div>
