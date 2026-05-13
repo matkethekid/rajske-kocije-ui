@@ -9,7 +9,8 @@ const libre = Libre_Caslon_Text({
     weight: ["400"],
     subsets: ["latin-ext"],
     style: ["italic"],
-    display: "swap"
+    display: "swap",
+    preload: true
 });
 
 const Footer = dynamic(() => import("@/components/Footer"));
