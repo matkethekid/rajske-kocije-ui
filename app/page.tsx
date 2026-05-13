@@ -20,10 +20,10 @@ const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
   return (
-  <div className="relative">
+  <div className="relative w-full min-h-screen">
     <Navbar/>
-    <main className="min-h-screen flex flex-col items-center justify-center py-20">
-      <div className="text-center text-5xl">
+    <main className="flex-1 flex flex-col items-center justify-center py-20">
+      <div className="text-center text-[2.30rem] md:text-5xl">
         <h1>Dostojanstveno, <span className={`bg-gray-200 px-2 ${libre.className} rounded-lg whitespace-nowrap leading-[1.7]`}>bez suvišnog.</span><br />Mir u trenucima oproštaja.</h1>
       </div>
       <div className="mt-8 flex items-center">

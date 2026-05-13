@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 
 function PreFooter() {
     return (
-        <section className="bg-[#E5E2DA] rounded-lg p-12 mb-10 text-center w-100 md:w-200">
+        <section className="bg-[#E5E2DA] rounded-lg p-12 text-center">
             <div className="flex flex-col items-center mb-8">
                 <h2 className="text-3xl font-serif mb-4">Tu smo za Vas, 24/7.</h2>
                 <p className="max-w-xl text-gray-600 leading-relaxed">

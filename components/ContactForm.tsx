@@ -16,19 +16,19 @@ function ContactForm() {
     const [email, setEmail] = useState<string>("");
     const [service, setService] = useState<string>("");
     return (
-        <form className="w-full flex flex-col gap-5 max-w-5xl p-5">
+        <form className="w-full flex flex-col gap-5 lg:max-w-5xl lg:p-5">
             <div className="flex flex-col lg:flex-row gap-3">
-                <div className="flex flex-col gap-3 justify-start items-start">
+                <div className="flex flex-col gap-3 justify-start items-start w-full lg:w-fit">
                     <label htmlFor="ime" className="uppercase text-sm">ime</label>
-                    <input type="text" placeholder="Vaše puno ime i prezime" className="ring-0 pb-2 border border-black/20 border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="ime" required onChange={(e) => setName(e.target.value)}/>
+                    <input type="text" placeholder="Vaše puno ime i prezime" className="w-full ring-0 pb-2 border border-black/20 border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="ime" required onChange={(e) => setName(e.target.value)}/>
                 </div>
                 <div className="flex flex-col gap-3 justify-start items-start">
                     <label htmlFor="email" className="uppercase text-sm">email</label>
-                    <input type="email" placeholder="email@primer.com" className="ring-0 pb-2 border border-black/20 border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="email" required onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="email" placeholder="email@primer.com" className="w-full ring-0 pb-2 border border-black/20 border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="email" required onChange={(e) => setEmail(e.target.value)}/>
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-3">
-                <div className="flex flex-col gap-3 justify-start items-start w-[60%]">
+                <div className="flex flex-col gap-3 justify-start items-start lg:w-[60%]">
                     <label htmlFor="usluga" className="uppercase text-sm">usluga</label>
                     <Select value={service} onValueChange={setService}>
                         <SelectTrigger className="w-full border-black/20 border-t-transparent border-l-transparent border-r-transparent rounded-none placeholder:p-10 focus-visible:ring-0 outline-none">
@@ -47,7 +47,7 @@ function ContactForm() {
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-3">
-                <div className="flex flex-col gap-3 justify-start items-start w-[60%]">
+                <div className="flex flex-col gap-3 justify-start items-start lg:w-[60%]">
                     <label htmlFor="usluga" className="uppercase text-sm">poruka</label>
                     <Textarea placeholder="Vaša poruka ovde..." className="min-h-37.5 focus-visible:ring-0 border-black/20 border"></Textarea>
                 </div>
