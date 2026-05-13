@@ -20,18 +20,18 @@ function ContactForm() {
             <div className="flex flex-col lg:flex-row gap-3">
                 <div className="flex flex-col gap-3 justify-start items-start">
                     <label htmlFor="ime" className="uppercase text-sm">ime</label>
-                    <input type="text" placeholder="Vaše puno ime i prezime" className="ring-0 pb-2 border border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="ime" required onChange={(e) => setName(e.target.value)}/>
+                    <input type="text" placeholder="Vaše puno ime i prezime" className="ring-0 pb-2 border border-black/20 border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="ime" required onChange={(e) => setName(e.target.value)}/>
                 </div>
                 <div className="flex flex-col gap-3 justify-start items-start">
                     <label htmlFor="email" className="uppercase text-sm">email</label>
-                    <input type="email" placeholder="email@primer.com" className="ring-0 pb-2 border border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="email" required onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="email" placeholder="email@primer.com" className="ring-0 pb-2 border border-black/20 border-t-transparent border-l-transparent border-r-transparent focus-visible:outline-0 text-sm" name="email" required onChange={(e) => setEmail(e.target.value)}/>
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-3">
                 <div className="flex flex-col gap-3 justify-start items-start w-[60%]">
                     <label htmlFor="usluga" className="uppercase text-sm">usluga</label>
                     <Select value={service} onValueChange={setService}>
-                        <SelectTrigger className="w-full border-t-transparent border-l-transparent border-r-transparent rounded-none placeholder:p-10 focus-visible:ring-0 outline-none">
+                        <SelectTrigger className="w-full border-black/20 border-t-transparent border-l-transparent border-r-transparent rounded-none placeholder:p-10 focus-visible:ring-0 outline-none">
                             <SelectValue placeholder="Izaberite uslugu" />
                         </SelectTrigger>
                         <SelectContent>
@@ -49,7 +49,7 @@ function ContactForm() {
             <div className="flex flex-col lg:flex-row gap-3">
                 <div className="flex flex-col gap-3 justify-start items-start w-[60%]">
                     <label htmlFor="usluga" className="uppercase text-sm">poruka</label>
-                    <Textarea placeholder="Vaša poruka ovde..." className="min-h-37.5 focus-visible:ring-0"></Textarea>
+                    <Textarea placeholder="Vaša poruka ovde..." className="min-h-37.5 focus-visible:ring-0 border-black/20 border"></Textarea>
                 </div>
             </div>
             <button aria-label="Pošalji poruku" className="uppercase pt-3 pb-3 pl-10 pr-10 rounded-xl bg-black max-w-87.5 text-white text-sm cursor-pointer">Pošalji poruku</button>
