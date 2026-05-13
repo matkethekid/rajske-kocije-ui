@@ -18,9 +18,9 @@ export default function Home() {
   return (
   <div className="relative">
     <Navbar/>
-    <main className="min-h-screen flex flex-col items-center justify-center py-20">
+    <main className="min-h-screen flex flex-col items-center justify-start pt-15 lg:pt-28">
       <div className="text-center text-5xl">
-        <h1>Dostojanstveno, <span className={`bg-gray-200 px-2 ${libre.className}`}>bez suvišnog.</span><br />Mir u trenucima oproštaja.</h1>
+        <h1>Dostojanstveno, <span className={`bg-gray-200 px-2 ${libre.className} rounded-lg whitespace-nowrap leading-[1.7]`}>bez suvišnog.</span><br />Mir u trenucima oproštaja.</h1>
       </div>
       <div className="mt-8 flex items-center hero-text-animation">
         <Link href="/kontakt" className="bg-black text-white px-12 py-4 text-sm rounded-full">
@@ -61,7 +61,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="relative">
           <div className="relative h-125 w-full md:w-[90%] overflow-hidden">
-            <Image src="/cvece.svg"  alt="" fill className="object-cover rounded-lg" loading="lazy"/>
+            <Image src="/cvece.svg"  alt="" fill className="object-cover rounded-lg" priority fetchPriority="high"/>
           </div>
           <div className="absolute -bottom-10 right-0 md:right-4 w-64 h-64 border-5 border-white rounded-[30px] overflow-hidden shadow-xl">
             <Image src="/rukovanje.svg"  alt="" fill className="object-cover" loading="lazy"/>
