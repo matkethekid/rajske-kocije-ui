@@ -28,7 +28,7 @@ function Navbar() {
     return (
         <nav className="w-full h-20 sticky top-0 z-100 bg-white">
             <div className="flex flex-row justify-between items-center lg:max-w-5xl h-full mx-auto w-full p-5 lg:p-0">
-                <p className={`${libre.className} text-lg w-50 flex z-100`}>Rajske Kočije</p>
+                <Link href="/" className={`${libre.className} text-lg w-50 flex z-100`}>Rajske Kočije</Link>
                 <ul className="hidden lg:flex flex-row gap-10 w-full items-center justify-center">
                     {links.map((link: Links, index: number) => (
                         <Link key={index} href={link.href} className="text-black uppercase hover:underline underline-offset-4">{link.name}</Link>
