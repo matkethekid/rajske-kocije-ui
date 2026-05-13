@@ -33,27 +33,27 @@ export default function Home() {
     <section className="hidden mt-20 lg:flex items-start justify-center gap-4 px-4 max-w-5xl mx-auto">
       <div className="w-32 md:w-40 mt-16">
         <div className="relative h-40 md:h-55 rounded-2xl overflow-hidden">
-          <Image src="/img1.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
+          <Image src="/img1.avif" alt="" fill className="object-cover" priority fetchPriority="high" sizes="(max-width: 768px) 40vw, (max-width: 1024px) 20vw, 15vw"/>
         </div>
       </div>
       <div className="w-32 md:w-40 mt-8">
         <div className="relative h-44 md:h-60 rounded-2xl overflow-hidden">
-          <Image src="/img2.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
+          <Image src="/img2.avif" alt="" fill className="object-cover" priority fetchPriority="high" sizes="(max-width: 768px) 40vw, (max-width: 1024px) 20vw, 15vw"/>
         </div>
       </div>
       <div className="w-36 md:w-44 mt-0">
         <div className="relative h-52 md:h-65 rounded-2xl overflow-hidden">
-          <Image src="/img3.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
+          <Image src="/img3.avif" alt="" fill className="object-cover" priority fetchPriority="high" sizes="(max-width: 768px) 40vw, (max-width: 1024px) 20vw, 15vw"/>
         </div>
       </div>
       <div className="w-32 md:w-40 mt-8">
         <div className="relative h-44 md:h-60 rounded-2xl overflow-hidden">
-          <Image src="/img4.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
+          <Image src="/img4.avif" alt="" fill className="object-cover" priority fetchPriority="high" sizes="(max-width: 768px) 40vw, (max-width: 1024px) 20vw, 15vw"/>
         </div>
       </div>
       <div className="w-32 md:w-40 mt-16">
         <div className="relative h-40 md:h-55 rounded-2xl overflow-hidden">
-          <Image src="/img5.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
+          <Image src="/img5.avif" alt="" fill className="object-cover" priority fetchPriority="high" sizes="(max-width: 768px) 40vw, (max-width: 1024px) 20vw, 15vw"/>
         </div>
       </div>
     </section>
@@ -61,10 +61,10 @@ export default function Home() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="relative">
           <div className="relative h-125 w-full md:w-[90%] overflow-hidden">
-            <Image src="/cvece.svg"  alt="" fill className="object-cover rounded-lg" priority fetchPriority="high"/>
+            <Image src="/cvece.svg"  alt="" fill className="object-cover rounded-lg" priority fetchPriority="high" sizes="(max-width: 1024px) 100vw, 60vw"/>
           </div>
-          <div className="absolute -bottom-10 right-0 md:right-4 w-64 h-64 border-5 border-white rounded-[30px] overflow-hidden shadow-xl">
-            <Image src="/rukovanje.svg"  alt="" fill className="object-cover" loading="lazy"/>
+          <div className="absolute -bottom-10 right-0 md:right-4 w-45 h-45 lg:w-64 lg:h-64 border-5 border-white rounded-[30px] overflow-hidden shadow-xl">
+            <Image src="/rukovanje.svg"  alt="" fill className="object-cover" loading="lazy" fetchPriority="low" sizes="(max-width: 768px) 180px, 256px"/>
           </div>
         </div>
         <div className="space-y-6 lg:pl-12">
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
           <div className="md:col-span-7 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
             <div className="relative h-64 md:h-80 w-full">
-              <Image  src="/usluga1.avif" alt="Pogrebne Usluge" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"/>
+              <Image src="/usluga1.avif" alt="Pogrebne Usluge" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
             </div>
             <div className="p-8 md:p-10">
               <h3 className="text-2xl font-serif text-[#2a2a2a] mb-4">Pogrebne Usluge</h3>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-5 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
             <div className="relative h-64 md:h-80 w-full">
-              <Image  src="/usluga2.avif" alt="Iznos i Prevoz Pokojnika" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"/>
+              <Image src="/usluga2.avif" alt="Iznos i Prevoz Pokojnika" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
             </div>
             <div className="p-8 md:p-10">
               <h3 className="text-2xl font-serif text-[#2a2a2a] mb-4">Iznos i Prevoz Pokojnika</h3>
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-5 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
             <div className="relative h-64 md:h-80 w-full">
-              <Image  src="/usluga3.avif" alt="Pogrebna oprema" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"/>
+              <Image src="/usluga3.avif" alt="Pogrebna oprema" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
             </div>
             <div className="p-8 md:p-10">
               <h3 className="text-2xl font-serif text-[#2a2a2a] mb-4">Pogrebna oprema</h3>
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-7 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
             <div className="relative h-64 md:h-80 w-full">
-              <Image  src="/usluga4.avif"  alt="Administrativna pomoć" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy"/>
+              <Image  src="/usluga4.avif"  alt="Administrativna pomoć" fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
             </div>
             <div className="p-8 md:p-10">
               <h3 className="text-2xl font-serif text-[#2a2a2a] mb-4">Administrativna pomoć</h3>
