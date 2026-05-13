@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 function OurServices() {
     return (
-        <section className="bg-white py-24 px-6">
+        <section className="bg-white py-24 px-6" id="services">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-5xl font-serif text-[#1a1a1a] mb-5">Naše usluge</h2>
@@ -22,9 +22,9 @@ function OurServices() {
                             <h3 className="text-2xl font-serif text-[#2a2a2a] mb-4">Pogrebne Usluge</h3>
                             <p className="text-gray-500 text-[13px] leading-relaxed mb-8 opacity-80">
                                 Sveobuhvatna organizacija koja uključuje tradicionalna izlaganja, verske obrede i savremene ceremonije života u kapeli.</p>
-                            <Link href="/" className="flex items-center text-[0.625rem] font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">
-                                PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" />
-                            </Link>
+                            {/*<Link href="/" className="flex items-center text-[0.625rem] font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">*/}
+                            {/*    PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" />*/}
+                            {/*</Link>*/}
                         </div>
                     </div>
                     <div className="md:col-span-5 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
@@ -36,9 +36,6 @@ function OurServices() {
                             <p className="text-gray-500 text-[13px] leading-relaxed mb-8 opacity-80">
                                 Siguran prevoz pokojnika iz zemlje i inostranstva, uz organizaciju i povoljne cene.
                             </p>
-                            <Link href="/" className="flex items-center text-[0.625rem] tracking-[0.15em] font-bold text-[#555] hover:text-black transition-colors uppercase">
-                                PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" />
-                            </Link>
                         </div>
                     </div>
                     <div className="md:col-span-5 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
@@ -50,9 +47,6 @@ function OurServices() {
                             <p className="text-gray-500 text-[13px] leading-relaxed mb-8 opacity-80">
                                 Kvalitetna oprema za dostojanstven ispraćaj, veliki izbor sanduka, cveća i prateće opreme.
                             </p>
-                            <Link href="/" className="flex items-center text-[0.625rem] font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">
-                                PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" />
-                            </Link>
                         </div>
                     </div>
                     <div className="md:col-span-7 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 flex-1">
@@ -64,9 +58,6 @@ function OurServices() {
                             <p className="text-gray-500 text-[13px] leading-relaxed mb-8 opacity-80">
                                 Stručna administrativna pomoć pri organizaciji sahrane i rešavanju potrebne dokumentacije.
                             </p>
-                            <Link href="/" className="flex items-center text-[0.625rem] font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">
-                                PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" />
-                            </Link>
                         </div>
                     </div>
                 </div>

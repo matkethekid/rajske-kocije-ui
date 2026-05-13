@@ -20,7 +20,7 @@ interface Links {
 const links: Links[] = [
     { id: 0, name: "naslovna", href: "/" },
     { id: 1, name: "o nama", href: "/onama" },
-    { id: 0, name: "usluge", href: "/usluge" },
+    { id: 0, name: "usluge", href: "/#services" },
 ];
 
 function Navbar() {
