@@ -117,7 +117,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
               
-              <div className="md:col-span-7 group bg-[#f9f7f4] rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:shadow-lg">
+              <div className="md:col-span-7 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-lg">
                 <div className="relative h-64 md:h-80 w-full">
                   <Image  src="/usluga1.svg"  alt="Pogrebne Usluge" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
@@ -130,7 +130,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="md:col-span-5 group bg-[#f9f7f4] rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:shadow-lg">
+              <div className="md:col-span-5 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-lg">
                 <div className="relative h-64 md:h-80 w-full">
                   <Image  src="/usluga2.svg"  alt="Iznos i Prevoz Pokojnika" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
@@ -139,12 +139,12 @@ export default function Home() {
                   <p className="text-gray-500 text-[13px] leading-relaxed mb-8 opacity-80">
                     Siguran prevoz pokojnika iz zemlje i inostranstva, uz organizaciju i povoljne cene.
                   </p>
-                  <button className="flex items-center text-[10px] font-bold tracking-[0.15em] text-[#555] hover:text-black transition-colors uppercase">
+                  <button className="flex items-center text-[10px] font-bold text-[#555] hover:text-black transition-colors uppercase">
                     PROČITAJ VIŠE <ArrowRight className="ml-2 w-4 h-4" /></button>
                 </div>
               </div>
 
-              <div className="md:col-span-5 group bg-[#f9f7f4] rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:shadow-lg">
+              <div className="md:col-span-5 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-lg">
                 <div className="relative h-64 md:h-80 w-full">
                   <Image  src="/usluga3.svg"  alt="Pogrebna oprema"fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="md:col-span-7 group bg-[#f9f7f4] rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:shadow-lg">
+              <div className="md:col-span-7 group bg-[#f9f7f4] rounded-lg overflow-hidden transition-all duration-500 hover:shadow-lg">
                 <div className="relative h-64 md:h-80 w-full">
                   <Image  src="/usluga4.svg"  alt="Administrativna pomoć" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
