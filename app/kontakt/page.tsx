@@ -1,10 +1,9 @@
 ﻿import React from 'react';
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { Libre_Caslon_Text } from "next/font/google";
-import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 const libre = Libre_Caslon_Text({
     weight: ["400"],
@@ -18,6 +17,10 @@ const libreItalic = Libre_Caslon_Text({
     subsets: ["latin-ext"],
     style: ["italic"],
     display: "swap"
+});
+
+const Footer = dynamic(() => import('@/components/Footer'), {
+    ssr: true,
 });
 
 function Page() {
