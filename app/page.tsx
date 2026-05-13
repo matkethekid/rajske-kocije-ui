@@ -18,7 +18,7 @@ export default function Home() {
   return (
   <div className="relative">
     <Navbar/>
-    <div className="min-h-screen flex flex-col items-center justify-center py-20">
+    <main className="min-h-screen flex flex-col items-center justify-center py-20">
       <div className="text-center text-5xl">
         <h1 className="hero-text-animation">Dostojanstveno, <span className={`bg-gray-200 px-2 ${libre.className}`}>bez suvišnog.</span><br />Mir u trenucima oproštaja.</h1>
       </div>
@@ -173,7 +173,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-    </div>
+    </main>
     <Footer/>
   </div>
   );
