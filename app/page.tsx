@@ -33,27 +33,27 @@ export default function Home() {
     <section className="hidden mt-20 lg:flex items-start justify-center gap-4 px-4 max-w-5xl mx-auto">
       <div className="w-32 md:w-40 mt-16">
         <div className="relative h-40 md:h-55 rounded-2xl overflow-hidden">
-          <Image src="/img1.avif" alt="" fill className="object-cover" />
+          <Image src="/img1.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
         </div>
       </div>
       <div className="w-32 md:w-40 mt-8">
         <div className="relative h-44 md:h-60 rounded-2xl overflow-hidden">
-          <Image src="/img2.avif" alt="" fill className="object-cover" />
+          <Image src="/img2.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
         </div>
       </div>
       <div className="w-36 md:w-44 mt-0">
         <div className="relative h-52 md:h-65 rounded-2xl overflow-hidden">
-          <Image src="/img3.avif" alt="" fill className="object-cover" />
+          <Image src="/img3.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
         </div>
       </div>
       <div className="w-32 md:w-40 mt-8">
         <div className="relative h-44 md:h-60 rounded-2xl overflow-hidden">
-          <Image src="/img4.avif" alt="" fill className="object-cover" />
+          <Image src="/img4.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
         </div>
       </div>
       <div className="w-32 md:w-40 mt-16">
         <div className="relative h-40 md:h-55 rounded-2xl overflow-hidden">
-          <Image src="/img5.avif" alt="" fill className="object-cover" />
+          <Image src="/img5.avif" alt="" fill className="object-cover" priority fetchPriority="high"/>
         </div>
       </div>
     </section>
