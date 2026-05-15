@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 const manrope = Manrope({
   weight: ["400", "600", "800"],
@@ -67,10 +68,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-    >
-      <body className={`min-h-full flex flex-col ${manrope.className}`}>{children}</body>
+    <html lang="en">
+      <body className={`min-h-full flex flex-col ${manrope.className}`}>
+        {children}
+      <CookieBanner/>
+      </body>
     </html>
   );
 }
