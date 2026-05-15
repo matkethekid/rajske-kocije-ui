@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+// DODATO: Proširujemo Window interfejs direktno u fajlu da TypeScript odmah vidi tipove
+declare global {
+    interface Window {
+        gtag: (...args: any[]) => void;
+    }
+}
+
 export default function CookieBanner() {
     const [consent, setConsent] = useState<string | null>(null);
 
@@ -17,19 +24,20 @@ export default function CookieBanner() {
     const loadGA = () => {
         if (document.getElementById("ga-script")) return;
 
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function (...args: any[]) {
+            window.dataLayer.push(arguments);
+        };
+
         const script = document.createElement("script");
         script.id = "ga-script";
-        script.src = "https://www.googletagmanager.com/gtag/js?id=GTM-W2MLQ25S";
+        script.src = "https://www.googletagmanager.com/gtag/js?id=AW-18165253983";
         script.async = true;
         document.head.appendChild(script);
-        script.onload = () => {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(...args: unknown[]) {
-                window.dataLayer.push(args);
-            }
 
-            gtag("js", new Date());
-            gtag("config", "GA_MEASUREMENT_ID");
+        script.onload = () => {
+            window.gtag("js", new Date());
+            window.gtag("config", "AW-18165253983");
         };
     };
 
@@ -46,7 +54,7 @@ export default function CookieBanner() {
 
     if (consent !== null) return null;
     return (
-        <div className={ "fixed max-w-125 right-0 bottom-0 bg-black p-6 lg:p-4 rounded-sm flex flex-col gap-5 z-10"}>
+        <div className="fixed max-w-125 right-0 bottom-0 bg-black p-6 lg:p-4 rounded-sm flex flex-col gap-5 z-10">
             <div>
                 <p className="text-white">Koristimo kolačiće.</p>
                 <p className="text-gray-300 text-sm">Poštujemo Vašu privatnost. Koristimo kolačiće da bismo analizirali sajt i unapredili ga. Analitički kolačići (kao Google Analytics) će se koristiti samo uz Vaš pristanak</p>
