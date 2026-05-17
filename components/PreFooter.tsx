@@ -1,8 +1,19 @@
-﻿import React from 'react';
+﻿"use client";
+
+import React from 'react';
 import Link from "next/link";
 import { Phone } from "lucide-react";
 
 function PreFooter() {
+    const handleConversionClick = () => {
+        if (typeof window !== "undefined" && window.gtag) {
+            window.gtag('event', 'conversion', {
+                'send_to': 'AW-18165253983/QHjXCOnmy64cEN-O79VD',
+                'value': 1.0,
+                'currency': 'EUR'
+            });
+        }
+    };
     return (
         <section className="bg-[#E5E2DA] rounded-lg p-12 text-center">
             <div className="flex flex-col items-center mb-8">
@@ -13,7 +24,7 @@ function PreFooter() {
                 </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="tel:+38163377658" className="flex items-center justify-center rounded-full px-8 py-3 bg-black text-white transition-all w-full">
+                <Link href="tel:+38163377658" onClick={handleConversionClick} className="flex items-center justify-center rounded-full px-8 py-3 bg-black text-white transition-all w-full">
                     <Phone className="mr-2 w-4 h-4" /> +381 63 377 658
                 </Link>
                 <Link href="/kontakt" className="border border-black rounded-full px-8 py-3 text-black text-xs hover:bg-black hover:text-white transition-all w-full">

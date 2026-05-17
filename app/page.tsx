@@ -4,6 +4,7 @@ import { Libre_Caslon_Text } from "next/font/google";
 import { Phone } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import PreFooter from "@/components/PreFooter";
 
 const libre = Libre_Caslon_Text({
     weight: ["400"],
@@ -15,7 +16,6 @@ const libre = Libre_Caslon_Text({
 
 const AboutUs = dynamic(() => import("@/components/AboutUs"));
 const OurServices = dynamic(() => import("@/components/OurServices"));
-const PreFooter = dynamic(() => import("@/components/PreFooter"));
 const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
