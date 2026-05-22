@@ -23,11 +23,8 @@ function AboutUs() {
                         </h2>
                     </div>
                     <div className="space-y-4 text-gray-600 leading-relaxed max-w-xl">
-                        <p>U Rajskim Kočijama verujemo da je svaki život jedinstveno delo
-                            koje zaslužuje dostojanstven i duboko emotivan oproštaj. Naš
-                            pristup spaja tradicionalne vrednosti sa savremenim pristupom,
-                            kako bismo organizovali ispraćaje koji su istovremeno lični,
-                            dostojanstveni i ispunjeni poštovanjem.</p>
+                        <p>U Rajskim Kočijama verujemo da je svaki život jedinstveno delo koje zaslužuje dostojanstven i duboko emotivan oproštaj. Naš pristup spaja tradicionalne vrednosti sa savremenim pristupom, kako bismo organizovali ispraćaje koji su istovremeno lični, dostojanstveni i ispunjeni poštovanjem.</p>
+                        <p>Rajske Kočije su pogrebno preduzeće iz Beograda koje se bavi kompletnom organizacijom sahrana, prevozom pokojnika u zemlji i inostranstvu, kao i pružanjem svih neophodnih pogrebnih usluga.</p>
                         <p>Naš posvećeni tim je uz vas u svakom koraku, pružajući podršku i
                             preuzimajući sve organizacione obaveze, kako biste imali mir i
                             prostor da se posvetite sećanjima, porodici i procesu tuge.</p>

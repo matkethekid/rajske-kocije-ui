@@ -23,12 +23,13 @@ export default function Home() {
   <div className="relative w-full min-h-screen">
     <Navbar/>
     <main className="flex-1 flex flex-col items-center justify-center py-20">
-      <div className="text-center text-[2.30rem] md:text-5xl">
-        <h1>Dostojanstveno, <span className={`bg-gray-200 px-2 ${libre.className} rounded-lg whitespace-nowrap leading-[1.7]`}>bez suvišnog.</span><br />Mir u trenucima oproštaja.</h1>
+      <div className="text-center flex flex-col gap-5">
+        <h1 className="md:text-5xl text-[2.30rem]">Dostojanstveno, <span className={`bg-gray-200 px-2 ${libre.className} rounded-lg whitespace-nowrap leading-[1.7]`}>bez suvišnog.</span><br />Mir u trenucima oproštaja.</h1>
+         <p>Pozovite nas u bilo koje vreme - dostupni smo 24 časa</p>
       </div>
       <div className="mt-8 flex items-center">
-        <Link href="/kontakt" className="bg-black text-white px-12 py-4 text-sm rounded-full">
-          POZOVITE NAS
+        <Link href="tel:+38163377658" className="bg-black text-white px-12 py-4 text-sm rounded-full">
+          +381 63 377 658
         </Link>
         <div className="w-12.5 h-12.5 rounded-full bg-black text-white flex items-center justify-center">
           <Phone width={20} height={20} />
