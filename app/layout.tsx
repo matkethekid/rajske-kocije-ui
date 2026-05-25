@@ -12,8 +12,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rajskekocije.rs"),
-  title: "Rajske Kočije - Pogrebne usluge Beograd | Dostupni 24 časa",
-  description: "Rajske Kočije pružaju profesionalne i dostojanstvene pogrebne usluge u Beogradu. Dostupni smo 24 časa za organizaciju sahrana, prevoz pokojnika i kompletnu podršku.",
+  title: "Pogrebne Usluge Beograd 00-24h | Rajske Kočije",
+  description: "Pogrebne usluge Beograd 00-24h. Rajske Kočije nude dostojanstvenu organizaciju sahrana i hitan prevoz pokojnika. Dostupni non-stop, pozovite: 063377658.",
   keywords: [
     "pogrebne usluge Beograd",
     "prevoz pokojnika",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rajske Kočije - Pogrebne usluge Beograd",
-    description: "Dostojanstvene i profesionalne pogrebne usluge u Beogradu uz podršku porodicama 24 časa dnevno.",
+    title: "Pogrebne Usluge Beograd 00-24h | Rajske Kočije",
+    description: "Pogrebne usluge Beograd 00-24h. Rajske Kočije nude dostojanstvenu organizaciju sahrana i hitan prevoz pokojnika. Dostupni non-stop, pozovite: 063377658.",
     url: "https://rajskekocije.rs",
     siteName: "Rajske Kočije",
     locale: "sr_RS",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rajske Kočije - Pogrebne usluge Beograd",
+    title: "Pogrebne Usluge Beograd 00-24h | Rajske Kočije",
     description: "Profesionalne pogrebne usluge i podrška porodicama u Beogradu, dostupni 24 časa.",
   },
   category: "funeral services",
