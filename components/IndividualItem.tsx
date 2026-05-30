@@ -1,34 +1,88 @@
+"use client";
+
 import { Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react';
+
+interface Drone {
+    id: number;
+    name: string;
+    description: string;
+    thumbnailImage: string;
+    images: string[];
+    price: number;
+    inStock: boolean;
+    paket: string[];
+}
+
+interface IndividualDroneProps {
+    drone: Drone;
+}
+
+const drone: Drone = {
+    id: 1,
+    name: "Sanduk borovina",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.",
+    thumbnailImage: "/kovceg_prototip.avif",
+    images: ["/kovceg_prototip.avif", "/kovceg_prototip.avif", "/kovceg_prototip.avif"],
+    price: 111,
+    inStock: true,
+    paket: ["string[]"],
+}
 
 const IndividualItem = () => {
+    const [selectedImage, setSelectedImage] = useState(drone.images[0]);
+    const [zoomPos, setZoomPos] = useState({ x: 0, y: 0 });
+    const [showZoom, setShowZoom] = useState(false);
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+        const x = ((e.pageX - left) / width) * 100;
+        const y = ((e.pageY - top) / height) * 100;
+        setZoomPos({ x, y });
+    };
 return (
-    <section className="max-w-6xl mx-auto px-4 py-8 md:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="relative w-full aspect-video md:aspect-square max-h-125 flex justify-center items-center bg-gray-50 rounded-xl p-4">
-          <Image alt='Kovceg' src="/kovceg_prototip.avif" fill className="object-contain" priority />
-        </div>
-        <div className="flex flex-col space-y-6">
-          <div>
-            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-                Kovceg
-            </h1>
-            <div className="mt-3 flex items-baseline space-x-2">
-              <span className="text-gray-500 font-medium text-lg">Cena:</span>
-              <span className="text-2xl font-bold text-gray-900">Na upit</span>
+    <div className="w-full flex flex-col lg:flex-row bg-white p-6 gap-0">
+        <div className="flex w-full lg:w-1/2 gap-4 flex-col-reverse lg:flex-row mx-auto">
+            <div className="flex lg:flex-col gap-3 overflow-y-auto h-auto pr-2 sm:justify-center sm:items-center ">
+                {drone.images.map((img, idx) => (
+                    <div key={idx} onMouseEnter={() => setSelectedImage(img)} className={`relative w-20 h-20 shrink-0 cursor-pointer rounded-lg border-2 transition-all ${selectedImage === img ? "border-yellow-500 shadow-md" : "border-gray-200"}`}>
+                        <Image src={img} alt="drone" fill className="object-cover rounded-md" />
+                    </div>
+                ))}
             </div>
-          </div>
-
-          <hr className="border-gray-200" />
-          <Link href="tel:+38163377658" className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-[#161616] hover:bg-[#393b3a] text-white font-bold rounded-lg text-center transition-colors duration-200 shadow-md hover:shadow-lg gap-2">
-            <Phone />Kontaktirajte nas (+381 63 377 658)
-          </Link>
+            <div className="relative flex-1 min-h-150 rounded-2xl overflow-hidden cursor-crosshair" onMouseEnter={() => setShowZoom(true)} onMouseLeave={() => setShowZoom(false)}onMouseMove={handleMouseMove}>
+                <Image
+                    src={selectedImage}
+                    alt="Drone main"
+                    fill
+                    className="object-cover"
+                />
+                {showZoom && (
+                    <div className="absolute inset-0 pointer-events-none bg-white">
+                        <div
+                            className="absolute inset-0 transition-transform duration-75 ease-out"
+                            style={{
+                                backgroundImage: `url(${selectedImage})`,
+                                backgroundPosition: `${zoomPos.x}% ${zoomPos.y}%`,
+                                backgroundSize: '300%',
+                                backgroundRepeat: 'no-repeat'
+                            }}
+                        />
+                    </div>
+                )}
+            </div>
         </div>
-
-      </div>
-    </section>
+        <div className="w-full lg:w-1/3 flex flex-col gap-4">
+            <h1 className="text-4xl font-bold">{drone.name}</h1>
+            <div className="text-2xl font-semibold">Cena: {drone.price == 0 ? 'Na upit': `${drone.price}€ + PDV`}</div>
+            <p className="text-gray-600 leading-relaxed">{drone.description}</p>
+            <Link href="tel:+38163377658" className="w-full text-center py-4 bg-black text-white font-bold hover:bg-white hover:text-black rounded-full border border-black cursor-pointer transition">
+                Kontaktirajte nas (+381 63 377 658)
+            </Link>
+        </div>
+    </div>
   );
 }
 
