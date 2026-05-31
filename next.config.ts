@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
     output: "standalone",
     compress: true,
     productionBrowserSourceMaps: false,
+    cacheComponents: true,
     images: {
         formats: ['image/avif', 'image/webp'],
     },
