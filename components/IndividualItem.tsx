@@ -17,7 +17,7 @@ interface Drone {
 }
 
 interface IndividualDroneProps {
-    drone: Drone;
+    item: Drone;
 }
 
 const drone: Drone = {
@@ -31,7 +31,7 @@ const drone: Drone = {
     paket: ["string[]"],
 }
 
-const IndividualItem = () => {
+const IndividualItem = ({ item } : IndividualDroneProps) => {
     const [selectedImage, setSelectedImage] = useState(drone.images[0]);
     const [zoomPos, setZoomPos] = useState({ x: 0, y: 0 });
     const [showZoom, setShowZoom] = useState(false);

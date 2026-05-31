@@ -2,15 +2,33 @@
 import IndividualItem from "@/components/IndividualItem";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Suspense } from "react";
 
-function page() {
+const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
     return (
-        <div className="relative w-full min-h-screen">
-            <Navbar/>
-            <IndividualItem/>
-            <Footer/>
-        </div>
+        <section className="min-h-screen w-full">
+            <Suspense fallback={<div className="h-16" />}>
+                <Navbar />
+            </Suspense>
+            <Suspense fallback={<h1>eee</h1>}>
+                <ItemLoader params={params} />
+            </Suspense>
+            <Footer />
+        </section>
     );
+}
+
+async function ItemLoader({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    return <CacheItemFetch slug={slug}/>
+}
+
+async function CacheItemFetch({ slug }: { slug: string }) {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/drones/getbypreferredurl/${encodeURIComponent(slug)}`);
+    if (!response.ok) return <div className="p-20 text-center">Drone not found</div>;
+    const data = await response.json();
+    
+    return <IndividualItem item={data}/>
 }
 
 export default page;
