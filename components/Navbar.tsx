@@ -21,7 +21,6 @@ const links: Links[] = [
     { id: 0, name: "naslovna", href: "/" },
     { id: 1, name: "o nama", href: "/onama" },
     { id: 2, name: "usluge", href: "/#services" },
-    { id: 3, name: "pogrebna oprema", href: "/pogrebna-oprema" },
 ];
 
 function Navbar() {
