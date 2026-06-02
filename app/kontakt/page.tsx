@@ -57,7 +57,7 @@ function Page() {
                                     <div className="flex flex-col gap-1 justify-start items-start">
                                         <div className="flex justify-start items-start flex-col">
                                             <p className="text-[0.7rem] text-[#5F5E58] uppercase">posetite nas</p>
-                                            <p className="text-md text-start">Bulevar Kralja Aleksandra</p>
+                                            <p className="text-md text-start">Jurija Gagarina 67, Beograd</p>
                                         </div>
                                         <p className="text-[0.8rem] text-[#5F5E58] text-start">Otvoreno svakog radnog dana u bilo koje vreme.</p>
                                     </div>

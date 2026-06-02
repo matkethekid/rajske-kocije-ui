@@ -8,7 +8,7 @@ function PreFooter() {
     const handleConversionClick = () => {
         if (typeof window !== "undefined" && window.gtag) {
             window.gtag('event', 'conversion', {
-                'send_to': 'AW-18165253983/QHjXCOnmy64cEN-O79VD',
+                'send_to': 'AW-18165253983/G4KCCIK737YcEN-O79VD',
                 'value': 1.0,
                 'currency': 'EUR'
             });
