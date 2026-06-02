@@ -1,6 +1,5 @@
 "use client";
 
-import { Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -32,7 +31,7 @@ const drone: Drone = {
 }
 
 const IndividualItem = ({ item } : IndividualDroneProps) => {
-    const [selectedImage, setSelectedImage] = useState(drone.images[0]);
+    const [selectedImage, setSelectedImage] = useState(item.images[0]);
     const [zoomPos, setZoomPos] = useState({ x: 0, y: 0 });
     const [showZoom, setShowZoom] = useState(false);
 
@@ -46,19 +45,14 @@ return (
     <div className="w-full flex flex-col lg:flex-row bg-white p-6 gap-0">
         <div className="flex w-full lg:w-1/2 gap-4 flex-col-reverse lg:flex-row mx-auto">
             <div className="flex lg:flex-col gap-3 overflow-y-auto h-auto pr-2 sm:justify-center sm:items-center ">
-                {drone.images.map((img, idx) => (
+                {item.images.map((img, idx) => (
                     <div key={idx} onMouseEnter={() => setSelectedImage(img)} className={`relative w-20 h-20 shrink-0 cursor-pointer rounded-lg border-2 transition-all ${selectedImage === img ? "border-yellow-500 shadow-md" : "border-gray-200"}`}>
                         <Image src={img} alt="drone" fill className="object-cover rounded-md" />
                     </div>
                 ))}
             </div>
             <div className="relative flex-1 min-h-150 rounded-2xl overflow-hidden cursor-crosshair" onMouseEnter={() => setShowZoom(true)} onMouseLeave={() => setShowZoom(false)}onMouseMove={handleMouseMove}>
-                <Image
-                    src={selectedImage}
-                    alt="Drone main"
-                    fill
-                    className="object-cover"
-                />
+                <Image src={selectedImage} alt="Item main" fill className="object-cover"/>
                 {showZoom && (
                     <div className="absolute inset-0 pointer-events-none bg-white">
                         <div
@@ -75,9 +69,9 @@ return (
             </div>
         </div>
         <div className="w-full lg:w-1/3 flex flex-col gap-4">
-            <h1 className="text-4xl font-bold">{drone.name}</h1>
-            <div className="text-2xl font-semibold">Cena: {drone.price == 0 ? 'Na upit': `${drone.price}€ + PDV`}</div>
-            <p className="text-gray-600 leading-relaxed">{drone.description}</p>
+            <h1 className="text-4xl font-bold">{item.name}</h1>
+            <div className="text-2xl font-semibold">Cena: {item.price == 0 ? 'Na upit': `${item.price}€ + PDV`}</div>
+            <p className="text-gray-600 leading-relaxed">{item.description}</p>
             <Link href="tel:+38163377658" className="w-full text-center py-4 bg-black text-white font-bold hover:bg-white hover:text-black rounded-full border border-black cursor-pointer transition">
                 Kontaktirajte nas (+381 63 377 658)
             </Link>

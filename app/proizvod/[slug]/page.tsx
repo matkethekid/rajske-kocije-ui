@@ -10,7 +10,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             <Suspense fallback={<div className="h-16" />}>
                 <Navbar />
             </Suspense>
-            <Suspense fallback={<h1>eee</h1>}>
+            <Suspense fallback={<h1>Ucitavanje...</h1>}>
                 <ItemLoader params={params} />
             </Suspense>
             <Footer />
@@ -24,11 +24,11 @@ async function ItemLoader({ params }: { params: Promise<{ slug: string }> }) {
 }
 
 async function CacheItemFetch({ slug }: { slug: string }) {
-    const response = await fetch(`${process.env.BACKEND_URL}/products/getbypreferredurl/${encodeURIComponent(slug)}`);
+    const response = await fetch(`${process.env.BACKEND_URL}/products/bypreferredurl/${encodeURIComponent(slug)}`);
     if (!response.ok) return <div className="p-20 text-center">Drone not found</div>;
     const data = await response.json();
     
-    return <IndividualItem item={data}/>
+    return <IndividualItem item={data.data}/>
 }
 
 export default page;
