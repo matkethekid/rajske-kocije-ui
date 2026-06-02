@@ -32,6 +32,7 @@ const products = [
 interface Product {
     id: number;
     title: string;
+    description: string;
     preferredUrl: string;
     price: number;
     thumbnailImage: string;
