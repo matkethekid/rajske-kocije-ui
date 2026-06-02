@@ -3,6 +3,7 @@ import IndividualItem from "@/components/IndividualItem";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Suspense } from "react";
+import IndividualItemSkeleton from "@/components/IndividualItemSkeleton";
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
     return (
@@ -10,7 +11,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             <Suspense fallback={<div className="h-16" />}>
                 <Navbar />
             </Suspense>
-            <Suspense fallback={<h1>Ucitavanje...</h1>}>
+            <Suspense fallback={<IndividualItemSkeleton/>}>
                 <ItemLoader params={params} />
             </Suspense>
             <Footer />
