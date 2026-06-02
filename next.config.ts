@@ -6,7 +6,14 @@ const nextConfig: NextConfig = {
     productionBrowserSourceMaps: false,
     cacheComponents: true,
     images: {
-        formats: ['image/avif', 'image/webp'],
+        formats: ["image/avif", "image/webp"],
+        remotePatterns: [
+            {
+                protocol: "http",
+                hostname: "31.97.183.47",
+                port: "9000",
+            },
+        ],
     },
     compiler: {
         removeConsole: process.env.NODE_ENV === "production",

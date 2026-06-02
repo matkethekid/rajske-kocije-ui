@@ -24,7 +24,7 @@ async function ItemLoader({ params }: { params: Promise<{ slug: string }> }) {
 }
 
 async function CacheItemFetch({ slug }: { slug: string }) {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/drones/getbypreferredurl/${encodeURIComponent(slug)}`);
+    const response = await fetch(`${process.env.BACKEND_URL}/products/getbypreferredurl/${encodeURIComponent(slug)}`);
     if (!response.ok) return <div className="p-20 text-center">Drone not found</div>;
     const data = await response.json();
     

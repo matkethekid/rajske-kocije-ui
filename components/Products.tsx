@@ -29,15 +29,30 @@ const products = [
     },
 ];
 
-function Products() {
+interface Product {
+    id: number;
+    title: string;
+    preferredUrl: string;
+    price: number;
+    thumbnailImage: string;
+    images: string[];
+}
+
+async function Products() {
     async function fetchProducts() {
         "use cache";
         cacheTag("products");
         cacheLife("hours");
+        
+        const res = await fetch(`${process.env.BACKEND_URL}/products/all`);
+        const data = await res.json();
+        
+        return data.data;
     }
+    
+    const products: Product[] = await fetchProducts();
     return (
         <main className="w-full min-h-screen p-5 lg:p-10 ">
-            {/* Changed lg:grid-cols-3 to lg:grid-cols-2 to make each card wider */}
             <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 {products.map((product, index) => (
                     <Product key={product.id} index={index} item={product} />
