@@ -21,7 +21,21 @@ export async function generateMetadata(
 
     return {
         title: `${product.title} | Rajske Kočije - Pogrebne usluge i transport pokojnika 24h`,
-        description: product.description || `${product.title} - Rajske Kočije, pouzdano pogrebno preduzeće sa dugogodišnjim iskustvom. Organizacija sahrana, pogrebna oprema, prevoz pokojnika u zemlji i inostranstvu i kompletna podrška porodicama 24/7.`
+        description: product.description || `${product.title} - Rajske Kočije, pouzdano pogrebno preduzeće sa dugogodišnjim iskustvom. Organizacija sahrana, pogrebna oprema, prevoz pokojnika u zemlji i inostranstvu i kompletna podrška porodicama 24/7.`,
+        openGraph: {
+            title: product.title,
+            description: product.description || `${product.title} - Rajske Kočije, pouzdano pogrebno preduzeće sa dugogodišnjim iskustvom.`,
+            type: "website",
+            url: `https://rajskekocije.rs/proizvod/${slug}`,
+            images: [
+                {
+                    url: product.thumbnailImage,
+                    width: 1200,
+                    height: 630,
+                    alt: product.title,
+                },
+            ],
+        }
     };
 }
 

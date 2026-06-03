@@ -28,8 +28,36 @@ async function CacheItemFetch({ slug }: { slug: string }) {
     const response = await fetch(`${process.env.BACKEND_URL}/products/bypreferredurl/${encodeURIComponent(slug)}`);
     if (!response.ok) return <div className="p-20 text-center">Drone not found</div>;
     const data = await response.json();
+    const product = data.data;
     
-    return <IndividualItem item={data.data}/>
+    const productSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: product.title,
+        description: product.description,
+        image: [product.thumbnailImage],
+        brand: {
+            "@type": "Brand",
+            name: "Rajske Kočije",
+        },
+        offers: {
+            "@type": "Offer",
+            priceCurrency: "RSD",
+            price: product.price,
+            availability: true,
+            url: `https://rajskekocije.rs/proizvod/${product.preferredUrl}`,
+        },
+    }
+    
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+            />
+            <IndividualItem item={product}/>
+        </>
+    )
 }
 
 export default page;
