@@ -21,7 +21,7 @@ const Product = ({ index, item }: { index: number, item: itemInCollection }) => 
                 <div className="mt-3 flex flex-col gap-3">
                     <h3 className="text-black font-bold text-2xl leading-tight">{item.title}</h3>
                     <span className={`font-medium line-clamp-3 text-gray-500 text-sm`}>{item.description}</span>
-                    <span className={`font-bold text-lg`}>{item.price == 0 ? "Na upit" : `${item.price}€`}</span>
+                    <span className={`font-bold text-lg`}>{item.price == 0 ? "Na upit" : `${item.price} RSD`}</span>
                 </div>
             </Link>
         </div>
