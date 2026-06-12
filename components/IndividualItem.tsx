@@ -70,7 +70,7 @@ return (
         </div>
         <div className="w-full lg:w-1/3 flex flex-col gap-4 mt-5 lg:mb-0">
             <h1 className="text-4xl font-bold">{item.title}</h1>
-            <div className="text-2xl font-semibold">Cena: {item.price == 0 ? 'Na upit': `${item.price}€ + PDV`}</div>
+            <div className="text-2xl font-semibold">Cena: {item.price == 0 ? 'Na upit': `${item.price} RSD`}</div>
             <p className="text-gray-600 leading-relaxed">{item.description}</p>
             <Link href="tel:+38163377658" className="w-full text-center py-4 bg-black text-white font-bold hover:bg-white hover:text-black rounded-full border border-black cursor-pointer transition">
                 Kontaktirajte nas (+381 63 377 658)
