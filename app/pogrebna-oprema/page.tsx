@@ -1,7 +1,5 @@
 ﻿import React from 'react';
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 import Products from "@/components/Products";
 
