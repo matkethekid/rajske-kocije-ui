@@ -41,11 +41,7 @@ interface Product {
 
 async function Products() {
     async function fetchProducts() {
-        "use cache";
-        cacheTag("products");
-        cacheLife("hours");
-        
-        const res = await fetch(`${process.env.BACKEND_URL}/products/all`);
+        const res = await fetch(`${process.env.BACKEND_URL}/products/all`, { next: { revalidate: 3600 } });
         const data = await res.json();
         
         return data.data;
