@@ -30,19 +30,12 @@ function Page() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-5 justify-between">
                     <div className="flex flex-col gap-3">
-                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Dostojanstven prevoz pokojnika na teritoriji opštine Zemun</h1>
+                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Prevoz pokojnika Zemun - dostupni 24 časa</h1>
                         <p className="max-w-2xl text-[#5F5E58]">
-                            Rajske Kočije pružaju profesionalnu i brzu uslugu prevoza pokojnika specijalizovanu za
-                            područje Zemuna. Razumemo težinu trenutka i važnost hitne reakcije, stoga
-                            naš tim garantuje dolazak na adresu u najkraćem mogućem roku, bez obzira na
-                            deo opštine — od Gardoša i Donjeg Grada, preko Altine i Batajnice, do
-                            Ugrinovaca.
+                            Rajske Kočije pružaju profesionalne pogrebne usluge i prevoz pokojnika na teritoriji opštine Zemun. Dostupni smo 24 časa dnevno, 7 dana u nedelji za hitan dolazak na adresu i organizaciju prevoza pokojnika uz potpunu diskreciju i poštovanje prema porodici.
                         </p>
                         <p className="max-w-2xl text-[#5F5E58]">
-                            Naša vozila su opremljena prema najvišim međunarodnim standardima, osiguravajući
-                            maksimalno poštovanje i sigurnost tokom transporta. Pored samog prevoza, pružamo
-                            punu podršku u organizaciji neophodne dokumentacije, omogućavajući porodici da se
-                            posveti tugovanju dok mi preuzimamo logistički teret.
+                            Pokrivamo sve delove Zemuna, uključujući Gardoš, Donji Grad, Altinu, Batajnicu, Ugrinovce i okolna naselja. Prevoz pokojnika obavljamo namenskim vozilima koja ispunjavaju sve zakonske standarde, uz organizaciju transporta do kapele, groblja ili druge lokacije prema želji porodice.
                         </p>
                         <Link href="tel:+38163377658" className="p-3 bg-black rounded-full text-white text-center lg:max-w-50">+381 63377658</Link>
                     </div>
@@ -50,9 +43,9 @@ function Page() {
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/speedicon.svg" alt="speed icon" width={25} height={25}/>
                             <p className={`${libre.className} text-xl`}>Brza Intervencija</p>
-                            <p>Poznavanje svake ulice u Zemunu
-                                omogućava nam najbrži dolazak
-                                na adresu, 24 sata dnevno.</p>
+                            <p>
+                                Brz izlazak na teren u svim delovima Zemuna, dostupni 24 časa dnevno.
+                            </p>
                         </div>
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/secureicon.svg" alt="speed icon" width={20} height={25}/>

@@ -30,13 +30,12 @@ function Page() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-5 justify-between">
                     <div className="flex flex-col gap-3">
-                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Dostojanstven prevoz pokojnika na teritoriji opštine Novi Beograd</h1>
+                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Prevoz pokojnika Novi Beograd - dostupni 24 časa</h1>
                         <p className="max-w-2xl text-[#5F5E58]">
-                            Rajske Kočije pružaju profesionalne usluge prevoza pokojnika na teritoriji Novog Beograda, uz dostupnost 24 časa dnevno, sedam dana u nedelji. U trenucima kada je porodici potrebna hitna i pouzdana podrška, naš stručni tim organizuje transport pokojnika brzo, dostojanstveno i u skladu sa svim zakonskim i profesionalnim standardima.
+                            Rajske Kočije pružaju profesionalne pogrebne usluge i prevoz pokojnika na teritoriji Novog Beograda. Dostupni smo 24 časa dnevno, 7 dana u nedelji za preuzimanje pokojnika iz stambenih objekata, bolnica, domova za stare i drugih lokacija, uz brz dolazak i potpunu diskreciju.
                         </p>
                         <p className="max-w-2xl text-[#5F5E58]">
-                            Novi Beograd predstavlja jednu od najvećih i najnaseljenijih opština u Srbiji, sa brojnim stambenim blokovima, zdravstvenim ustanovama i poslovnim centrima. Zahvaljujući dugogodišnjem iskustvu i dobroj organizaciji, u mogućnosti smo da brzo reagujemo na pozive iz svih delova opštine, uključujući blokove, Bežanijsku Kosu, Ledine, Staro Sajmište i druge delove Novog Beograda.
-                            Prevoz pokojnika obavljamo specijalizovanim vozilima koja su opremljena prema najvišim standardima za siguran i dostojanstven transport. Svakom slučaju pristupamo sa posebnim poštovanjem, razumevanjem i diskrecijom, vodeći računa da porodica u teškim trenucima dobije profesionalnu podršku i pomoć.
+                            Pokrivamo sve delove Novog Beograda, uključujući Bežanijsku Kosu, Ledine, Blokove, Staro Sajmište i okolna naselja. Prevoz pokojnika obavljamo namenskim vozilima koja ispunjavaju sve zakonske i profesionalne standarde, uz organizaciju transporta prema kapeli, groblju ili drugoj lokaciji po želji porodice.
                         </p>
                         <Link href="tel:+38163377658" className="p-3 bg-black rounded-full text-white text-center lg:max-w-50">+381 63377658</Link>
                     </div>
@@ -44,9 +43,9 @@ function Page() {
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/speedicon.svg" alt="speed icon" width={25} height={25}/>
                             <p className={`${libre.className} text-xl`}>Brza Intervencija</p>
-                            <p>Poznavanje svake ulice u Zemunu
-                                omogućava nam najbrži dolazak
-                                na adresu, 24 sata dnevno.</p>
+                            <p>
+                                Dostupni smo 24 časa dnevno za brz dolazak na adresu u svim delovima Novog Beograda.
+                            </p>
                         </div>
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/secureicon.svg" alt="speed icon" width={20} height={25}/>

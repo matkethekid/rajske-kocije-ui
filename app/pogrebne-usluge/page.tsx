@@ -23,11 +23,9 @@ function Page() {
             <Navbar/>
             <main className="w-full max-w-7xl mx-auto mt-10 flex flex-col gap-10 p-5 lg:p-0">
                 <div className="flex flex-col gap-3 max-w-xl">
-                    <h1 className={`text-[3.2rem] ${libre.className} max-w-xl`}>Prevoz pokojnika po opštinama</h1>
+                    <h1 className={`text-[3.2rem] ${libre.className} max-w-xl`}>Pogrebne usluge i prevoz pokojnika po opštinama Beograda</h1>
                     <p>
-                        Pružamo profesionalnu i dostojanstvenu uslugu prevoza pokojnika na teritoriji celog
-                        Beograda. Naš tim je dostupan 24 sata dnevno, 7 dana u nedelji, obezbeđujući brzu i
-                        pouzdanu podršku u najtežim trenucima, bez obzira na lokaciju.
+                        Pružamo profesionalne pogrebne usluge i prevoz pokojnika na teritoriji svih beogradskih opština. Naš tim dostupan je 24 časa dnevno, 7 dana u nedelji i brzo izlazi na teren u svim delovima Beograda, uključujući Vračar, Dorćol, Novi Beograd, Zemun, Palilulu, Čukaricu i ostale opštine. Izaberite svoju lokaciju kako biste saznali više o uslugama i vremenu dolaska u vašem delu grada.
                     </p>
                     <span className="mt-3 flex flex-row gap-3 uppercase items-center font-semibold text-[0.950rem]"><Clock color="#000" size="20"/>DOSTUPNI SMO 24/7 ZA VAŠE POTREBE</span>
                 </div>

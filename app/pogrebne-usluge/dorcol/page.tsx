@@ -30,9 +30,9 @@ function Page() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-5 justify-between">
                     <div className="flex flex-col gap-3">
-                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Dostojanstven prevoz pokojnika na teritoriji opštine Dorćol</h1>
+                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Prevoz pokojnika Dorćol - dostupni 24 časa</h1>
                         <p className="max-w-2xl text-[#5F5E58]">
-                            Rajske Kočije pružaju profesionalne usluge prevoza pokojnika na području Dorćola, uz dostupnost 24 časa dnevno, tokom cele godine. U trenucima kada je porodici potrebna brza, pouzdana i dostojanstvena podrška, naš tim stoji na raspolaganju kako bi organizovao transport pokojnika u najkraćem mogućem roku i u skladu sa svim važećim propisima.
+                            Rajske Kočije pružaju profesionalne pogrebne usluge i prevoz pokojnika na području Dorćola. Dostupni smo 24 časa dnevno, tokom cele godine, za brz dolazak i organizaciju prevoza uz potpunu diskreciju i poštovanje prema porodici.
                         </p>
                         <p className="max-w-2xl text-[#5F5E58]">
                             Kao jedan od najstarijih i najprepoznatljivijih delova Beograda, Dorćol obuhvata veliki broj stambenih, zdravstvenih i administrativnih objekata, zbog čega je važno da usluga prevoza pokojnika bude organizovana brzo i efikasno. Naš tim poseduje dugogodišnje iskustvo u radu na teritoriji Dorćola i okolnih delova centra grada, što nam omogućava da reagujemo bez odlaganja i pružimo podršku porodicama u najtežim trenucima.
@@ -44,9 +44,9 @@ function Page() {
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/speedicon.svg" alt="speed icon" width={25} height={25}/>
                             <p className={`${libre.className} text-xl`}>Brza Intervencija</p>
-                            <p>Poznavanje svake ulice u Zemunu
-                                omogućava nam najbrži dolazak
-                                na adresu, 24 sata dnevno.</p>
+                            <p>
+                                Dostupni smo 24 časa dnevno za brz dolazak na adresu u svim delovima Dorćola.
+                            </p>
                         </div>
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/secureicon.svg" alt="speed icon" width={20} height={25}/>

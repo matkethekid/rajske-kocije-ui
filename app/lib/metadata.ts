@@ -3,8 +3,8 @@
 const baseUrl = "https://rajskekocije.rs";
 
 export function createOpstinaMetadata(opstina: string): Metadata {
-    const title = `Prevoz pokojnika ${opstina} | Rajske Kočije`;
-    const description = `Profesionalne pogrebne usluge i prevoz pokojnika na teritoriji ${opstina}. Dostupni 24 časa dnevno.`;
+    const title = `Prevoz pokojnika ${opstina} | Pogrebne usluge 24/7 | Rajske Kočije`;
+    const description = `Profesionalne pogrebne usluge u ${opstina} i prevoz pokojnika 24 časa dnevno. Brz dolazak, diskrecija i kompletna organizacija transporta.`;
 
     return {
         metadataBase: new URL(baseUrl),
@@ -18,7 +18,7 @@ export function createOpstinaMetadata(opstina: string): Metadata {
             follow: true,
         },
         openGraph: {
-            title,
+            title: `Prevoz pokojnika ${opstina} – Pogrebne usluge 24/7 | Rajske Kočije`,
             description,
             url: `${baseUrl}/pogrebne-usluge/${opstina}`,
             siteName: "Rajske Kočije",

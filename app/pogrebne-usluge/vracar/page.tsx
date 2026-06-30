@@ -30,7 +30,7 @@ function Page() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-5 justify-between">
                     <div className="flex flex-col gap-3">
-                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Dostojanstven prevoz pokojnika na teritoriji opštine Vračar</h1>
+                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Prevoz pokojnika Vračar - dostupni 24 časa</h1>
                         <p className="max-w-2xl text-[#5F5E58]">
                             Rajske Kočije pružaju profesionalne usluge prevoza pokojnika na teritoriji Vračara, uz dostupnost 24 časa dnevno tokom cele godine. U trenucima kada se porodica suočava sa gubitkom voljene osobe, važno je imati pouzdanog partnera koji će preuzeti organizaciju transporta i pružiti podršku sa maksimalnim poštovanjem, diskrecijom i profesionalnošću.
                         </p>
@@ -44,9 +44,9 @@ function Page() {
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/speedicon.svg" alt="speed icon" width={25} height={25}/>
                             <p className={`${libre.className} text-xl`}>Brza Intervencija</p>
-                            <p>Poznavanje svake ulice u Zemunu
-                                omogućava nam najbrži dolazak
-                                na adresu, 24 sata dnevno.</p>
+                            <p>
+                                Dostupni smo 24 časa dnevno za brz dolazak na adresu u svim delovima Vračara.
+                            </p>
                         </div>
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/secureicon.svg" alt="speed icon" width={20} height={25}/>

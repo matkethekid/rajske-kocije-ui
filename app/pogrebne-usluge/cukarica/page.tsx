@@ -30,9 +30,9 @@ function Page() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-5 justify-between">
                     <div className="flex flex-col gap-3">
-                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Dostojanstven prevoz pokojnika na teritoriji opštine Čukarica</h1>
+                        <h1 className={`${libre.className} text-[2.5rem] max-w-xl leading-12`}>Prevoz pokojnika Čukarica - dostupni 24 časa</h1>
                         <p className="max-w-2xl text-[#5F5E58]">
-                            Rajske Kočije pružaju profesionalne usluge prevoza pokojnika na teritoriji opštine Čukarica, uz dostupnost 24 časa dnevno, svakog dana u godini. U trenucima kada je porodici potrebna brza i pouzdana podrška, naš tim reaguje u najkraćem mogućem roku i organizuje kompletan transport pokojnika sa maksimalnim poštovanjem, diskrecijom i profesionalnošću.
+                            Rajske Kočije pružaju profesionalne pogrebne usluge i prevoz pokojnika na teritoriji opštine Čukarica. Dostupni smo 24 časa dnevno, svakog dana u godini, za brz dolazak i organizaciju prevoza uz potpunu diskreciju i poštovanje prema porodici.
                         </p>
                         <p className="max-w-2xl text-[#5F5E58]">
                             Usluge prevoza pokojnika dostupne su na celoj teritoriji Čukarice, uključujući Banovo Brdo, Žarkovo, Čukaričku Padinu, Bele Vode, Cerak, Cerak Vinograde, Sremčicu, Rušanj, Ostružnicu i okolna naselja. Zahvaljujući dugogodišnjem iskustvu i dobro organizovanom timu, u mogućnosti smo da odgovorimo na hitne pozive i pružimo podršku porodicama u najtežim trenucima.
@@ -44,9 +44,9 @@ function Page() {
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/speedicon.svg" alt="speed icon" width={25} height={25}/>
                             <p className={`${libre.className} text-xl`}>Brza Intervencija</p>
-                            <p>Poznavanje svake ulice u Zemunu
-                                omogućava nam najbrži dolazak
-                                na adresu, 24 sata dnevno.</p>
+                            <p>
+                                Poznavanje svih delova Čukarice omogućava nam brz dolazak na adresu, 24 časa dnevno.
+                            </p>
                         </div>
                         <div className="rounded-lg bg-[#F9F7F4] border border-[#CFC4C5] p-5 flex flex-col gap-3 lg:max-w-75">
                             <Image src="/secureicon.svg" alt="speed icon" width={20} height={25}/>
