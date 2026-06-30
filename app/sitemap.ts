@@ -32,5 +32,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.9,
         },
+        {
+            url: 'https://rajskekocije.rs/pogrebne-usluge/cukarica',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://rajskekocije.rs/pogrebne-usluge/dorcol',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://rajskekocije.rs/pogrebne-usluge/novi-beograd',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://rajskekocije.rs/pogrebne-usluge/vracar',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://rajskekocije.rs/pogrebne-usluge/zemun',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
     ]
 }
