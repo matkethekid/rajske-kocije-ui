@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { createOpstinaMetadata } from "../../lib/metadata";
+import { createOpstinaMetadata } from "../../../lib/metadata";
 
 export const metadata = createOpstinaMetadata("Vračar");
 
