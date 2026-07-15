@@ -25,6 +25,35 @@ const nextConfig: NextConfig = {
     experimental: {
         optimizePackageImports: ['lucide-react']
     },
+    async redirects() {
+      return [
+        {
+          source: "/pogrebne-usluge/zemun",
+          destination: "/pogrebne-usluge/prevoz-pokojnika/zemun",
+          permanent: true,
+        },
+        {
+          source: "/pogrebne-usluge/novi-beograd",
+          destination: "/pogrebne-usluge/prevoz-pokojnika/novi-beograd",
+          permanent: true,
+        },
+        {
+          source: "/pogrebne-usluge/dorcol",
+          destination: "/pogrebne-usluge/prevoz-pokojnika/dorcol",
+          permanent: true,
+        },
+        {
+          source: "/pogrebne-usluge/vracar",
+          destination: "/pogrebne-usluge/prevoz-pokojnika/vracar",
+          permanent: true,
+        },
+        {
+          source: "/pogrebne-usluge/cukarica",
+          destination: "/pogrebne-usluge/prevoz-pokojnika/cukarica",
+          permanent: true,
+        },
+      ]
+    }
 };
 
 export default nextConfig;
