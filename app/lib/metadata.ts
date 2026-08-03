@@ -11,7 +11,7 @@ export function createOpstinaMetadata(opstina: string): Metadata {
         title,
         description,
         alternates: {
-            canonical: `${baseUrl}/pogrebne-usluge/${opstina}`,
+            canonical: `${baseUrl}/pogrebne-usluge/prevoz-pokojnika/${opstina}`,
         },
         robots: {
             index: true,
