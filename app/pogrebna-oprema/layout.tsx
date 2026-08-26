@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         "pogrebni venci i suze"
     ],
     alternates: {
-        canonical: "/pogrebna-oprema",
+        canonical: "https://rajskekocije.rs/pogrebna-oprema",
     },
     robots: {
         index: true,
